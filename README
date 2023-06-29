@@ -1,0 +1,7 @@
+Change src/pug/index.pug
+
+Before deploying (or for testing):
+make start
+
+Then:
+make deploy
