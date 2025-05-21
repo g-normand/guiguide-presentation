@@ -1,3 +1,7 @@
-npm start
+Change src/pug/index.pug
 
-scp -r dist/* guiguide@ssh-guiguide.alwaysdata.net:/home/guiguide/www/
+Before deploying (or for testing):
+make start
+
+Then:
+make deploy
