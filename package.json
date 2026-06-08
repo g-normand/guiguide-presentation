@@ -1,53 +1,28 @@
 {
-    "title": "Full Width Pics",
-    "name": "startbootstrap-full-width-pics",
-    "version": "5.0.6",
-    "scripts": {
-        "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
-        "build:assets": "node scripts/build-assets.js",
-        "build:pug": "node scripts/build-pug.js",
-        "build:scripts": "node scripts/build-scripts.js",
-        "build:scss": "node scripts/build-scss.js",
-        "clean": "node scripts/clean.js",
-        "start": "npm run build && node scripts/start.js",
-        "start:debug": "npm run build && node scripts/start-debug.js"
-    },
-    "description": "A HTML template featuring sections with full width image backgrounds built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template/full-width-pics",
-    "bugs": {
-        "url": "https://github.com/StartBootstrap/startbootstrap-full-width-pics/issues",
-        "email": "feedback@startbootstrap.com"
-    },
-    "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (https://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/StartBootstrap/startbootstrap-full-width-pics.git"
-    },
-    "dependencies": {
-        "bootstrap": "5.2.3"
-    },
-    "devDependencies": {
-        "autoprefixer": "10.4.14",
-        "browser-sync": "2.29.1",
-        "chokidar": "3.5.3",
-        "concurrently": "6.3.0",
-        "postcss": "8.4.21",
-        "prettier": "2.8.6",
-        "pug": "3.0.2",
-        "sass": "1.60.0",
-        "shelljs": "0.8.5",
-        "upath": "2.0.1"
-    }
+  "name": "Guiguide Presentation",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check:links": "npm run build && linkinator ./dist --recurse --check-css --verbosity error --port 0",
+    "capture:previews": "node scripts/capture/generate-previews.mjs",
+    "capture:previews:install": "playwright install chromium"
+  },
+  "dependencies": {
+    "@fontsource/lato": "^5.2.7",
+    "@fontsource/montserrat": "^5.2.8",
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "academicons": "^1.9.5",
+    "bootstrap": "^5.2.3",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.5",
+    "linkinator": "^7.6.1",
+    "playwright": "^1.53.2",
+    "vite": "^8.0.3"
+  }
 }
