@@ -6,4 +6,4 @@ start:
 
 deploy:
 	scp -r dist/* guiguide@ssh-guiguide.alwaysdata.net:/home/guiguide/www/
-	git tag $(TAG_DATE); git push guigui $(TAG_DATE) --no-verify
+	git tag $(TAG_DATE); git push origin $(TAG_DATE) --no-verify
