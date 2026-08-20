@@ -42,23 +42,24 @@ export const siteContent = {
       alt: "cero_vs_ebird preview",
       kind: "web",
     },
-    "cuenca_birding": {
-      id: "cuenca_birding",
-      title: "Cuenca Birding",
+    "ecuador_birding": {
+      id: "ecuador_birding",
+      title: "Ecuador Birding",
       description:
-        "Some informations about birds around Cuenca.",
-      url: "https://g-normand.github.io/cuenca_birding/",
-      previewImage: "/assets/previews/cuenca_birding.png",
-      alt: "Cuenca Birding preview",
+        "Some informations about birds in Ecuador.",
+      url: "https://g-normand.github.io/ecuador_birding/",
+      previewImage: "/assets/previews/ecuador_birding.png",
+      alt: "Ecuador Birding preview",
       kind: "web",
     },
-    "napo_birding": {
-      id: "napo_birding",
-      title: "Napo Birding",
-      description: "Some informations about birds in Napo province.",
-      url: "https://g-normand.github.io/napo_birding/",
-      previewImage: "/assets/previews/napo_birding.png",
-      alt: "Napo Birding preview",
+    "ebird_plugin": {
+      id: "ebird_plugin",
+      title: "eBird plugin",
+      description:
+        "Some new features for eBird.",
+      url: "https://github.com/g-normand/ebird_plugin/",
+      previewImage: "/assets/previews/ebird_plugin.png",
+      alt: "eBird plugin preview",
       kind: "web",
     },
     "faune_proche": {
@@ -81,8 +82,8 @@ export const siteContent = {
     "lista_roja_ecuador",
     "cero_report",
     "cero_vs_ebird",
-    "cuenca_birding",
-    "napo_birding",
+    "ecuador_birding",
+    "ebird_plugin",
   ],
   allAppsExtraIds: [
     "rare_birds_ecuador",
